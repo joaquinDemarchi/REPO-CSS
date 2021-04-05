@@ -65,4 +65,18 @@ footer{
 .footer-content{
     font-family: 'Rock Salt', cursive;
     font-size: 3rem;
+    text-align: center;
+}
+
+.caja-icoredes{
+    width: 100%;
+    height: 10%;
+    display:flex;
+    flex: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.icoredes{
+    width: 100%;
 }
