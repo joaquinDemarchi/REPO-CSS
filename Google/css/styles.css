@@ -1,9 +1,11 @@
+/* GENERAL */
 body {
     margin: 0;
     padding: 0;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -13,10 +15,14 @@ header {
     width: 100%;
     height: 60px;
 }
+
+/* MENU SUPERIOR */
 header nav {
     display: flex;
     justify-content: flex-end;
 }
+
+/* MENU SUPERIOR DERECHO */
 header nav .nav-right-section {
     width: 250px;
     height: auto;
@@ -42,10 +48,13 @@ nav .nav-right-section img {
     margin-left: 10px;
 }
 
+/* CONTENEDOR PRINCIPAL */
 main {
     margin-top: 150px;
     text-align: center;
 }
+
+/* CONTENEDOR PRINCIPAL: LOGO */
 main .main-logo {
     width: 530px;
     margin: 0 auto;
@@ -55,6 +64,7 @@ main .main-logo img {
     width: 300px;
 }
 
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA */
 main .main-input {
     width: 530px;
     margin: 0 auto;
@@ -74,6 +84,8 @@ main .main-input input {
     border: none;
     outline: none;
 }
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ANIMACIONES */
 main .main-input-container:hover {
     box-shadow: 0 1px 6px 0 #20212447;
     border-color: #dfe1e500;
@@ -86,6 +98,8 @@ main .main-input .search-icon {
     width: 18px;
     height: 18px;
 }
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ICONOS */
 main .main-input .micro-icon {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
     background-repeat: no-repeat;
@@ -95,6 +109,8 @@ main .main-input .micro-icon {
     height: 18px;
     cursor: pointer;
 }
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA */
 
 main .main-buttons {
     width: 530px;
@@ -113,12 +129,15 @@ main .main-buttons button {
     padding: 0 15px;
     margin-right: 15px;
 }
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA-ANIMACIONES */
 main .main-buttons button:hover {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px #000001;
     color: #222;
 }
 
+/* FOOTER */
 footer {
     width: 100%;
     height: 50px;
@@ -131,18 +150,26 @@ footer {
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
+
+/* FOOTER: MENU */
 footer ul {
     margin: 10px;
     list-style: none;
     display: flex;
     padding-left: 0;
 }
+
+/* FOOTER: MENU-IZQ */
 footer .footer-left {
     justify-self: left;
 }
+
+/* FOOTER: MENU-DER */
 footer .footer-right {
     justify-self: right;
 }
+
+/* FOOTER: MENU-LINKS */
 footer ul li a {
     margin: 10px;
     color: #5f6368;
