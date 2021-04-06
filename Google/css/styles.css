@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* MENU */
+
+.caja_menu{
+    width: 100%;
+    height: 5.6rem;
+    background-color: gray;
+}
+.menu{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu_gmail, .menu_img{
+    padding: 0.8rem;
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.menu_apps, .menu_picus{
+    width:4rem;
+    padding: 0.8rem;
+    
+}
+
+/* MAIN */
+
+.contenedor{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contenedor_buscador{
+    border: 0.3rem solid 
+    gray;
+    border-radius: 10% ;
+    margin-bottom: 2rem;
+}
+/* FOOTER */
