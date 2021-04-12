@@ -148,8 +148,8 @@ main .main-buttons button:hover {
 footer {
     width: 100%;
     height: 50px;
-    position: absolute; /* Para que quede siempre hasta abajo*/
-    bottom: 0; /* Para que quede siempre hasta abajo*/
+    position: absolute; /* Para que que*/
+    bottom: 0;
     display: grid; /*Para fraccionar */
     grid-template-columns: 1fr 1fr; /*fraccionamos en cuadriculas de 2 */
     align-items: center;
