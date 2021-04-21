@@ -1,0 +1,193 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; /*cuando pase el mouse que aparezca la manito*/
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+/* MENU SUPERIOR */
+header nav {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-end;
+}
+
+/* MENU SUPERIOR DERECHO */
+header nav .nav-right-section {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000000;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    /*para agragar imagenes (no usamos iconos) en este caso en el menu*/
+    background-repeat: no-repeat;
+    background-position: center; /*posicion de la imagen*/
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* CONTENEDOR PRINCIPAL: LOGO */
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA */
+main .main-input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 50rem;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ANIMACIONES */
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ICONOS */
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 20px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA */
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block; /*se aplica a elementos. similar a flex; flex:wrap*/
+}
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA-ANIMACIONES */
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px darkgray;
+    color: #222;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute; /* Para que que*/
+    bottom: 0;
+    display: grid; /*Para fraccionar */
+    grid-template-columns: 1fr 1fr; /*fraccionamos en cuadriculas de 2 */
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+/* FOOTER: MENU */
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+/* FOOTER: MENU-IZQ */
+footer .footer-left {
+    justify-self: left;
+}
+/* FOOTER: MENU-DER */
+footer .footer-right {
+    justify-self: right;
+}
+/* FOOTER: MENU-LINKS */
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}

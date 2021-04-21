@@ -1,0 +1,171 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; /*cuando pase el mouse que aparezca la manito*/
+}
+
+
+header {
+    width: 100%;
+    height: 6rem;
+}
+
+/* MENU SUPERIOR */
+header nav {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: flex-end;
+}
+
+/* MENU SUPERIOR DERECHO */
+header nav .nav-right-section {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin-right: 1rem;
+    color: #000000;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    /*para agragar imagenes (no usamos iconos) en este caso en el menu*/
+    background-repeat: no-repeat;
+    background-position: center; /*posicion de la imagen*/
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/* CONTENEDOR PRINCIPAL */
+main {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 15rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* CONTENEDOR PRINCIPAL: LOGO */
+main .main-logo {
+    /* width: 50rem; */
+    margin: 0 ;
+    margin-bottom: 3.5rem;
+    justify-self: center;
+}
+main .main-logo img {
+    width: 30rem;
+    
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA */
+main .main-input {
+    /* width:50rem; */
+    margin-bottom: 35px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+main .main-input-container {
+    /* width: 40rem; */
+    border-radius: 10rem;
+    border: 0.1rem solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input {
+    /* width: 45rem; */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: large;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ANIMACIONES */
+main .main-input-container:hover {
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 2rem;
+    width:1.8rem;
+    height: 1.8rem;
+}
+
+/* CONTENEDOR PRINCIPAL: BARRA DE BSUQUEDA-ICONOS */
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA */
+
+main .main-buttons {
+    /* width: 50rem; */
+    margin: 0 auto;
+}
+main .main-buttons div {
+    display: inline-block; /*se aplica a elementos. similar a flex; flex:wrap*/
+}
+main .main-buttons button {
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+}
+
+/* CONTENEDOR PRINCIPAL: BOTONES BAJO BARRA-ANIMACIONES */
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem darkgray;
+    color: #222;
+}
+
+/* FOOTER */
+
+footer {
+    display: none;
+
+}
